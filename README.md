@@ -16,5 +16,12 @@ cd SignUpProject
 + ) **FlatList:** Hiệu quả cho việc hiển thị danh sách lớn hoặc thường xuyên thay đổi, với khả năng tái sử dụng các thành phần mục để tối ưu hiệu suất.
 
 ### 1. ScrollView
-
+![image](https://github.com/Experimenters1/React-Native-Core-Components/assets/64000769/5ad4182e-3256-47f6-81e3-9d5ae4a0632c) <br>
 + ) **Mục đích: ScrollView** dùng để hiển thị một lượng nội dung hạn chế mà có thể không vừa với màn hình và người dùng có thể cuộn để xem thêm. Nó có thể chứa các thành phần khác nhau không chỉ giới hạn ở danh sách.
++ ) **Hiệu suất:** Không phù hợp để hiển thị số lượng lớn các thành phần hay dữ liệu vì nó tải tất cả các thành phần ngay từ đầu, có thể gây chậm và tốn bộ nhớ.
++ ) **Sử dụng:** Thường được sử dụng khi bạn cần cuộn qua một số lượng hạn chế các thành phần hoặc nội dung phức tạp không có cấu trúc lặp lại.
+
+### 2. FlatList
+
+
+https://chat.openai.com/c/f277f67a-e123-4b20-9206-571dcb338d55 <br><br>
