@@ -27,7 +27,7 @@ function App(): React.JSX.Element {
         <Text>Box 2</Text>
       </View>
         <View style={styles.box3}>
-        <Text>Box 3</Text>
+        <Text>Box 3 - Long content that might cause shrinking</Text>
       </View>
   </View>
   );
@@ -39,8 +39,6 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: 'blue',
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
     flexDirection: 'column',
   },
   box1: {
