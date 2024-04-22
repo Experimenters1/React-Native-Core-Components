@@ -25,6 +25,7 @@ function App(): React.JSX.Element {
      <TouchableHighlight
      style={styles.button}
      underlayColor="#DDDDDD"
+     activeOpacity={0.6} // Độ mờ khi nhấn vào là 60%
      onPress={() => Alert.alert('Đã nhấn! onPress')}
      onShowUnderlay={() => Alert.alert('Đã nhấn! onShowUnderlay')}
      onHideUnderlay={() => Alert.alert('Đã nhấn! onHideUnderlay')}
