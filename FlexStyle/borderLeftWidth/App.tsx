@@ -17,7 +17,9 @@ function App(): React.JSX.Element {
 
   return (
     <View style={styles.container}>
-    <Text style={styles.box}>Hello, World!</Text>
+     <View style={styles.box}>
+        <Text>Hello World</Text>
+      </View>
   </View>
   );
 
