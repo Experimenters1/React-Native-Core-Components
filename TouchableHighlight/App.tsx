@@ -8,8 +8,10 @@
 import React, { useState } from 'react';
 import {
   StyleSheet,
-  TextInput,
+  Text,
   View,
+  TouchableHighlight,
+  Alert
 
 } from 'react-native';
 
@@ -18,30 +20,21 @@ import {
 
 function App(): React.JSX.Element {
  
-  const [inputValue,setInputValue] = useState('');
-
-  const handleOnSubmit = () => {
-    console.log('inputValue: ',inputValue);
-  };
-
   return (
        <View style={styles.container}>
-     <TextInput 
-     style={styles.input}
-     onChangeText={text => setInputValue(text)}
-     value={inputValue}
-     placeholder="Nhập văn bản ở đây..."
-     keyboardType="default"
-     secureTextEntry={false}
-     autoFocus={true} // Bàn phím sẽ tự động mở khi TextInput này được hiển thị
-     onSubmitEditing={handleOnSubmit} // Xử lý sự kiện nhấn Enter
-     /> 
-       
-     
+     <TouchableHighlight
+     style={styles.button}
+     underlayColor="#DDDDDD"
+     onPress={() => Alert.alert('Đã nhấn! onPress')}
+     onShowUnderlay={() => Alert.alert('Đã nhấn! onShowUnderlay')}
+     onHideUnderlay={() => Alert.alert('Đã nhấn! onHideUnderlay')}
+     > 
+       <Text style={styles.buttonText}>Nhấn vào tôi</Text>
+       </TouchableHighlight>
        </View>
   );
 
- 
+  
 }
 
 const styles = StyleSheet.create({
@@ -52,8 +45,13 @@ const styles = StyleSheet.create({
       backgroundColor: '#97b2de',
       padding: 10,
   },
+  button: {
+     backgroundColor: '#007AFF',
+     padding: 10,
+     borderRadius: 45,
+  },
 
-  input: {
+  buttonText: {
     backgroundColor: '#fff',
     height: 40,
     textAlign: 'center',
