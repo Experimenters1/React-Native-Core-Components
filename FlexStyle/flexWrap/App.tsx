@@ -44,7 +44,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     padding: 10,
     marginTop: 70,
-    flexWrap: 'wrap', // Enables wrapping of children
+    // flexWrap: 'wrap', // Enables wrapping of children
+    // flexWrap: 'nowrap',
+    flexWrap: 'wrap-reverse',
   },
 
   box: {
