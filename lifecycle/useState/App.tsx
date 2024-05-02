@@ -1,10 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import React ,{useState} from 'react';
 import {
   StyleSheet,
@@ -13,22 +6,34 @@ import {
   TouchableOpacity,
   ScrollView,
   SafeAreaView,
+  Text,
+  Button
  
 
 } from 'react-native';
 
-import PostApp from './Component/PostApp';  // Ensure the path matches where your PostApp component is saved
-
 
 
 function App(): React.JSX.Element {
- 
- 
+  const [count,setCount] = useState(0);
+
+   const increaseCount = () => {
+      setCount(count + 1)
+   }
+
+
   return (
-    <SafeAreaView style={styles.container}>
-      <PostApp />
-    </SafeAreaView>
-      
+     <View style={styles.container}>
+        <Text>Count: {count}</Text>
+          
+          <TouchableOpacity
+          style={styles.button}
+          activeOpacity={0.6}
+          onPress={increaseCount}
+          >
+           <Text style={styles.buttonText}>Increase Count</Text>
+          </TouchableOpacity>
+     </View>
   );
 
   
@@ -36,13 +41,28 @@ function App(): React.JSX.Element {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1, // Takes full height of the screen
-    justifyContent: 'center',  // Centers content vertically
-    alignItems: 'center' , // Centers content horizontally
+    flex: 1,
+     justifyContent: 'center',
+     alignItems: 'center',
+     backgroundColor: '#97b2de',
+
+  },
+
+  button: {
+    backgroundColor: 'red',
+    width: 150,
+    marginTop: 10,
+    borderRadius : 30,
+    padding: 10,
+    
+  },
+
+  buttonText: {
+    color: 'white',
+    textAlign: 'center',
+    
   }
   
 });
 
 export default App;
-
-//https://chat.openai.com/c/ad5080fe-ab1c-4622-bffc-90e185b7de7f
