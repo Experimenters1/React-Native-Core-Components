@@ -7,6 +7,7 @@ npx react-native init SignUpProject --template react-native-template-typescript
 cd SignUpProject
 
 ```
+https://reactnative.dev/blog/2018/05/07/using-typescript-with-react-native <br>
 
 + ) **View:** Cơ bản và linh hoạt, dùng để tổ chức layout cho ứng dụng.
 + ) **Text:** Dùng để hiển thị văn bản. Bất kỳ nội dung văn bản nào trong **React Native** phải được bao bọc bởi một thành phần **Text.**
@@ -24,4 +25,4 @@ cd SignUpProject
 ### 2. FlatList
 
 
-https://chat.openai.com/c/f277f67a-e123-4b20-9206-571dcb338d55 <br><br>
+
